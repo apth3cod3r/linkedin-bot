@@ -7,7 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import os,sys,pyperclip
 import pyautogui
 
-login='you lined in username here'
+login='you linkedin username here'
 password='your password here'
 
 # opening automated browser window
@@ -23,7 +23,7 @@ time.sleep(4)
 driver.find_element_by_name("session_key").send_keys(str(login))
 driver.find_element_by_name("session_password").send_keys(str(password))
 time.sleep(2)
-pyautogui.click(1586,545)
+pyautogui.click(1586,545)  # coordinates of sign in button
 print("successfully logged in")
 
 
@@ -40,16 +40,16 @@ def myfun():
 
      for url in urls:
           driver.get(url)
-          time.sleep(20)
+          time.sleep(10)
           pyautogui.keyDown('ctrlleft');pyautogui.press('p');
           pyautogui.keyUp('ctrlleft');
           time.sleep(4)
-          pyautogui.click(1414,869)
+          pyautogui.click(1414,869)  # coordinates of print button
           time.sleep(4)
-          pyautogui.click(180,572);pyautogui.write(c)
+          pyautogui.click(180,572);pyautogui.write(c) #coordinates of textfield to write file name
           c=str(int(c)+1)
           time.sleep(3)
-          pyautogui.click(740,672)
+          pyautogui.click(740,672) # coordinates of save button
           time.sleep(3)
 
 
