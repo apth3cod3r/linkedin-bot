@@ -10,6 +10,6 @@ A gui based program will open  which cleary gives the dynamic information about 
 take the cursor to the desired positon and you will get the co-ordinates of that position .
 Note them down.
 
-if you get error while using pyautogui them do the following
+if you get error while importing pyautogui them do the following
 -go to command prompt
 -type python -m pip install pyautogui
